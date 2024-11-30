@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
-                "mode": "preview",
-                "source": false
+                "file": "Others/Useful commands.md",
+                "mode": "source",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Useful commands"
             }
           }
         ]
@@ -164,7 +164,31 @@
   },
   "active": "51524596d22c4db5",
   "lastOpenFiles": [
-    "assets/logo.png",
-    "README.md"
+    "Hacking/Kali installation.md",
+    "Others/Useful commands.md",
+    "Programming/dotnet.md",
+    "Hacking/Useful websites.md",
+    "Linux/apt.md",
+    "Linux/Debian server setup.md",
+    "Linux/dnf.md",
+    "Linux/pacman.md",
+    "Networking/Common ports.md",
+    "Networking/Useful commands.md",
+    "Others/Google search.md",
+    "Windows/Configuration.md",
+    "Windows/Useful commands.md",
+    "Windows/Networking.md",
+    "Windows/System checks.md",
+    "Windows/Usb drive formatting.md",
+    "Untitled",
+    "Hacking",
+    "README.md",
+    "Untitled.md",
+    "Others",
+    "Networking",
+    "Programming",
+    "Windows",
+    "Linux",
+    "assets/logo.png"
   ]
 }
