@@ -22,14 +22,14 @@ dotnet new <template> [--framework <framework>] [-o <project>]
 ```
 create a new project using the given template.
 _main templates:_
-_- console_
-_- classlib_
-_- nunit_
-_- webapp|webapi|web_
-_- sln_
-_- gitignore_
-_- nugetconfig_
-_- buildprops_
+- _console_
+- _classlib_
+- _nunit_
+- _webapp|webapi|web_
+- _sln_
+- _gitignore_
+- _nugetconfig_
+- _buildprops_
 _frameworks: net8.0 | netstandard2.1_
 ___
 ### Packages and references
@@ -57,8 +57,8 @@ dotnet clean|build|test|run [--configuration <config>] [--project <path/project.
 clean, build, test or run a project.
 _configurations: Release | Debug_
 _logger examples:_
-_- console;verbosity=detailed_
-_- html;logfilename=\<file>_
+- _console;verbosity=detailed_
+- _html;logfilename=\<file>_
 ```
 dotnet publish [--configuration <config>]
 ```

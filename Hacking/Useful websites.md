@@ -6,3 +6,6 @@
 | [https://crackstation.net/](https://crackstation.net/) | Password hash cracker |
 | [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) | List of payloads |
 | [PayloadsAllTheThings resources](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Methodology%20and%20Resources) | List of payload cheatsheets & resources |
+| [https://getgophish.com/](https://getgophish.com/) | Phishing framework |
+| [The Social Engineering Toolkit](https://trustedsec.com/resources/tools/the-social-engineer-toolkit-set) | Social engineering toolset |
+| [SRI Hash Generator](https://www.srihash.org/) | W3C hash generator |
