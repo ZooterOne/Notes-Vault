@@ -23,6 +23,8 @@ sudo systemctl status tor.service
 ```
 install tor service.
 edit proxychains.conf as follows:
+- _comment strict_chain out_.
+- _enable dynamic_chain_.
 - _enable tor proxies socks4 and socks5_
 ```
 service tor start
