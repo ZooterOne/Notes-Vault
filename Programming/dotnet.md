@@ -21,9 +21,9 @@ install a new template.
 dotnet new <template> [--framework <framework>] [-o <project>]
 ```
 create a new project using the given template.
-_main templates:_ `console` | `classlib` | `nunit` | `webapp` | `webapi` | `web` | `sln` | `gitignore` | `nugetconfig` | `buildprops`
+_main templates:_ `console` | `classlib` | `nunit` | `webapp` | `webapi` | `web` | `sln` | `gitignore` | `nugetconfig` | `buildprops`.
 
-_frameworks:_ `net8.0` | `netstandard2.1`
+_frameworks:_ `net8.0` | `netstandard2.1`.
 ___
 ### Packages and references
 ```
@@ -48,7 +48,7 @@ ___
 dotnet clean|build|test|run [--configuration <config>] [--project <path/project.csproj>] [--logger "<options>"]
 ```
 clean, build, test or run a project.
-_configurations:_ `Release` | `Debug`
+_configurations:_ `Release` | `Debug`.
 _logger examples:_
 - `console;verbosity=detailed`
 - `html;logfilename=\<file>`
@@ -56,4 +56,4 @@ _logger examples:_
 dotnet publish [--configuration <config>]
 ```
 publish a project.
-_configurations:_ `Release` | `Debug`
+_configurations:_ `Release` | `Debug`.

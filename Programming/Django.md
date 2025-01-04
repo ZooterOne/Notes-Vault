@@ -14,8 +14,8 @@ start the server.
 python manage.py startapp <app name>
 ```
 setup date to create an app.
-`update <app name>/models.py.`
-`update <app name>/settings.py with <app name>.`
+update `<app name>/models.py`.
+update `<app name>/settings.py` with `<app name>`.
 ```
 python manage.py makemigrations <app name>
 ```
@@ -28,12 +28,12 @@ migrate the database using latest modifications.
 python manage.py createsuperuser
 ```
 setup admin account.
-`update <app name>/admin.py with models.`
+update `<app name>/admin.py` with models.
 ```
 python manage.py shell
 ```
 run a shell.
-`update <project name>/urls.py and include app urls.`
-`create <app name>/urls.py.`
-`update <app name>/views.py.`
-`generate template under <app name>/templates.`
+update `<project name>/urls.py` and include app urls.
+create `<app name>/urls.py`.
+update `<app name>/views.py`.
+generate template under `<app name>/templates`.

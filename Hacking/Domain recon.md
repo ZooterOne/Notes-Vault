@@ -11,7 +11,7 @@ _Options:_
 - `AAAA`_: IPv6_
 - `MX`_: email_
 
-_DNS server:_ `1.1.1.1` _(Cloudflare)_ | `8.8.8.8` _(Google)_
+_DNS server:_ `1.1.1.1` _(Cloudflare)_ | `8.8.8.8` _(Google)._
 ```
 dnsrecon -t std -d <domain>
 ```

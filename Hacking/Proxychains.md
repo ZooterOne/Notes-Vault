@@ -12,7 +12,7 @@ ___
 edit proxychains.conf as follows:
 - _comment strict\_chain out_.
 - _enable dynamic\_chain_.
-- _find proxy addresses from_ [Proxy list](https://spys.one/en/)
+- _find proxy addresses from_ [Proxy list](https://spys.one/en/).
 ___
 ### Use tor
 ```
@@ -25,7 +25,7 @@ install tor service.
 edit proxychains.conf as follows:
 - _comment strict_chain out_.
 - _enable dynamic_chain_.
-- _enable tor proxies socks4 and socks5_
+- _enable tor proxies socks4 and socks5_.
 ```
 service tor start
 service tor stop

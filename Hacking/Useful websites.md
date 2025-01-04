@@ -1,29 +1,32 @@
 ### Hacks
 | __Address__ | __Description__ |
 | --- | --- |
-| [https://www.exploit-db.com/](https://www.exploit-db.com/) | List of exploits and Google hacks |
+| [Exploit-db](https://www.exploit-db.com/) | List of exploits and Google hacks |
 | [SecLists](https://github.com/danielmiessler/SecLists) | Multiple types of lists |
 | [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) | List of payloads |
-| [PayloadsAllTheThings resources](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Methodology%20and%20Resources) | List of payload cheatsheets & resources |
-| [https://www.shodan.io/](https://www.shodan.io/) | Search engine for connected devices |
+| [Payloads resources](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Methodology%20and%20Resources) | List of payload cheatsheets & resources |
+| [Shodan](https://www.shodan.io/) | Search engine for connected devices |
+| [PEASS-ng](https://github.com/peass-ng/PEASS-ng) | Privilege escalation tools |
+| [PrivescCheck](https://github.com/itm4n/PrivescCheck) | Windows privilege escalation scripts |
+| [Windows Exploit Suggester](https://github.com/bitsadmin/wesng) | Windows exploit scripts |
 
 ### Domain & ip addresses
 | __Address__ | __Description__ |
 | --- | --- |
-| [https://www.abuseipdb.com/](https://www.abuseipdb.com/) | List abusive ip addresses |
-| [https://dnsdumpster.com/](https://dnsdumpster.com/) | Lookup DNS records |
-| [https://crt.sh/](https://crt.sh/) | Search engine for domain certificates |
-| [https://www.wappalyzer.com/](https://www.wappalyzer.com/) | Identify technologies on websites |
-| [https://web.archive.org/](https://web.archive.org/) | Websites time machine |
+| [Abuse ip db](https://www.abuseipdb.com/) | List abusive ip addresses |
+| [Dns dumpster](https://dnsdumpster.com/) | Lookup DNS records |
+| [Certificates](https://crt.sh/) | Search engine for domain certificates |
+| [Wappalyzer](https://www.wappalyzer.com/) | Identify technologies on websites |
+| [Web archive](https://web.archive.org/) | Websites time machine |
 
 ### Passwords & hash
 | __Address__ | __Description__ |
 | --- | --- |
-| [https://crackstation.net/](https://crackstation.net/) | Password hash cracker |
+| [Crackstation](https://crackstation.net/) | Password hash cracker |
 | [SRI Hash Generator](https://www.srihash.org/) | W3C hash generator |
 
 ### Social engineering
 | __Address__ | __Description__ |
 | --- | --- |
-| [https://getgophish.com/](https://getgophish.com/) | Phishing framework |
+| [Go phish](https://getgophish.com/) | Phishing framework |
 | [The Social Engineering Toolkit](https://trustedsec.com/resources/tools/the-social-engineer-toolkit-set) | Social engineering toolset |
