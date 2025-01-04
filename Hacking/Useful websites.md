@@ -6,9 +6,11 @@
 | [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) | List of payloads |
 | [Payloads resources](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Methodology%20and%20Resources) | List of payload cheatsheets & resources |
 | [Shodan](https://www.shodan.io/) | Search engine for connected devices |
-| [PEASS-ng](https://github.com/peass-ng/PEASS-ng) | Privilege escalation tools |
+| [PEASS-ng](https://github.com/peass-ng/PEASS-ng) | Privilege escalation tools (Windows & Linux) |
 | [PrivescCheck](https://github.com/itm4n/PrivescCheck) | Windows privilege escalation scripts |
 | [Windows Exploit Suggester](https://github.com/bitsadmin/wesng) | Windows exploit scripts |
+| [LinEnum](https://github.com/rebootuser/LinEnum) | Linux privilege escalation script |
+| [GTFObins](https://gtfobins.github.io/) | Unix misconfigured binaries |
 
 ### Domain & ip addresses
 | __Address__ | __Description__ |

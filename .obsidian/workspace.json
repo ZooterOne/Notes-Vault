@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Hacking/Linux privilege escalation.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Linux privilege escalation"
             }
           }
         ]
@@ -164,9 +164,14 @@
   },
   "active": "51524596d22c4db5",
   "lastOpenFiles": [
-    "Windows/Useful commands.md",
-    "Hacking/Windows privilege escalation.md",
+    "Networking/ssh.md",
+    "Hacking/Linux privilege escalation.md",
+    "Hacking/Exploiting shares.md",
     "Hacking/Useful websites.md",
+    "Hacking/Windows privilege escalation.md",
+    "README.md",
+    "Hacking/Active recon.md",
+    "Windows/Useful commands.md",
     "Hacking/tcpdump.md",
     "Hacking/steghide.md",
     "Hacking/SMB shares.md",
@@ -183,13 +188,8 @@
     "Hacking/Kali installation.md",
     "Hacking/ffuf.md",
     "Hacking/Exploiting smtp.md",
-    "Hacking/Exploiting shares.md",
     "Hacking/Domain recon.md",
-    "Hacking/Active recon.md",
     "Windows/Usb drive formatting.md",
-    "Windows/System checks.md",
-    "Windows/Networking.md",
-    "Windows/Configuration.md",
     "Untitled",
     "Hacking",
     "Others",
