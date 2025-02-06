@@ -29,6 +29,16 @@ wc -l <file>
 ```
 display number of lines of the file.
 ___
+### Permissions
+```
+chown <user> <folder|file>
+```
+change the ownership of a folder or file.
+```
+chmod u+w -R <folder>
+```
+change the writing permission of a folder.
+___
 ### Processes
 ```
 ps aux
