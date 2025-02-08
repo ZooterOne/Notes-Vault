@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hacking/Linux privilege escalation.md",
+                "file": "Linux/distrobox.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Linux privilege escalation"
+              "title": "distrobox"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -164,12 +165,19 @@
   },
   "active": "51524596d22c4db5",
   "lastOpenFiles": [
-    "Networking/ssh.md",
-    "Hacking/Linux privilege escalation.md",
-    "Hacking/Exploiting shares.md",
+    "Hacking/Kali installation.md",
+    "Linux/distrobox.md",
     "Hacking/Useful websites.md",
-    "Hacking/Windows privilege escalation.md",
+    "Programming/dotnet.md",
+    "Linux/Useful commands.md",
+    "Linux/dd.md",
+    "Linux/Waydroid.md",
+    "Untitled.md",
     "README.md",
+    "Hacking/Linux privilege escalation.md",
+    "Networking/ssh.md",
+    "Hacking/Exploiting shares.md",
+    "Hacking/Windows privilege escalation.md",
     "Hacking/Active recon.md",
     "Windows/Useful commands.md",
     "Hacking/tcpdump.md",
@@ -183,13 +191,6 @@
     "Hacking/NFS shares.md",
     "Hacking/Netcat.md",
     "Hacking/msfvenom.md",
-    "Hacking/Metasploit (msfconsole).md",
-    "Hacking/Local Windows credentials.md",
-    "Hacking/Kali installation.md",
-    "Hacking/ffuf.md",
-    "Hacking/Exploiting smtp.md",
-    "Hacking/Domain recon.md",
-    "Windows/Usb drive formatting.md",
     "Untitled",
     "Hacking",
     "Others",

@@ -37,3 +37,5 @@ update a container.
 distrobox-upgrade --all
 ```
 update all containers.
+
+`BoxBuddy` a graphical interface for Distrobox.
