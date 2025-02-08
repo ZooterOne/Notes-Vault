@@ -15,6 +15,8 @@
 ### Domain & ip addresses
 | __Address__ | __Description__ |
 | --- | --- |
+| [DNS leak test](https://dnsleaktest.com/) | Test DNS leak |
+| [IPLogger](https://iplogger.org/) | Track IP address |
 | [Abuse ip db](https://www.abuseipdb.com/) | List abusive ip addresses |
 | [Dns dumpster](https://dnsdumpster.com/) | Lookup DNS records |
 | [Certificates](https://crt.sh/) | Search engine for domain certificates |

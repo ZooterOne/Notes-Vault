@@ -1,5 +1,10 @@
 _select top10 only during installation._
 ```
+apt install kali-linux-top10
+```
+install top10 from minimal installation (container).
+List of packages: `https://www.kali.org/tools/kali-meta/` 
+```
 apt update
 apt upgrade
 ```
