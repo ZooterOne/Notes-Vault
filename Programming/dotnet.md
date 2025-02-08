@@ -42,6 +42,17 @@ remove a package from the project.
 dotnet add reference <path/project.csproj>
 ```
 add a local project reference to the project.
+```
+dotnet nuget locals --list all
+```
+list all local Nuget packages.
+```
+dotnet nuget locals --clear all
+```
+remove all local Nuget packages.
+```
+dotnet restore <solution>
+```
 ___
 ### Build, test, run and publish
 ```

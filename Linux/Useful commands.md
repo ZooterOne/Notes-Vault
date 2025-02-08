@@ -29,7 +29,11 @@ wc -l <file>
 ```
 display number of lines of the file.
 ___
-### Permissions
+### File system
+```
+df
+```
+show information about the file system.
 ```
 chown <user> <folder|file>
 ```
