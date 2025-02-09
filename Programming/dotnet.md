@@ -64,7 +64,8 @@ _logger examples:_
 - `console;verbosity=detailed`
 - `html;logfilename=\<file>`
 ```
-dotnet publish [--configuration <config>]
+dotnet publish [--configuration <config>] [--runtime <rid>]
 ```
 publish a project.
 _configurations:_ `Release` | `Debug`.
+_runtimes:_ `win-x64` | `linux-x64`.
