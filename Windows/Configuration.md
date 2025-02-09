@@ -1,13 +1,3 @@
-### Users
-```
-net user <username> <password> /add
-```
-setup a new user.
-```
-net localgroup administrators <username> /add
-```
-setup user as an administrator.
-___
 ### File associations
 ```
 assoc

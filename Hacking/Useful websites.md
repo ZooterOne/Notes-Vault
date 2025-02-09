@@ -34,3 +34,4 @@
 | --- | --- |
 | [Go phish](https://getgophish.com/) | Phishing framework |
 | [The Social Engineering Toolkit](https://trustedsec.com/resources/tools/the-social-engineer-toolkit-set) | Social engineering toolset |
+| [Lock screen awareness](https://eyelockmyscreen.com/) | Lock screen awareness page |
