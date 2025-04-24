@@ -60,6 +60,8 @@ dnf download <package>
 
 download a package without installation.
 
+---
+
 ## Offline upgrade
 
 ```

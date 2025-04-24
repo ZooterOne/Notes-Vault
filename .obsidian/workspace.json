@@ -165,6 +165,8 @@
   },
   "active": "51524596d22c4db5",
   "lastOpenFiles": [
+    "Linux/dnf.md",
+    "README.md",
     "Hacking/ffuf.md",
     "Hacking/Exploiting smtp.md",
     "Hacking/Exploiting shares.md",
@@ -189,8 +191,6 @@
     "Networking/ssh.md",
     "Networking/Fedora ssh setup.md",
     "Networking/Fedora firewall setup.md",
-    "Networking/Debian firewall setup.md",
-    "Networking/Common ports.md",
     "Untitled",
     "Hacking",
     "Others",
