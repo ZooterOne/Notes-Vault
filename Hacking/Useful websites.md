@@ -1,4 +1,5 @@
-### Hacks
+## Hacks
+
 | __Address__ | __Description__ |
 | --- | --- |
 | [Exploit-db](https://www.exploit-db.com/) | List of exploits and Google hacks |
@@ -12,7 +13,8 @@
 | [LinEnum](https://github.com/rebootuser/LinEnum) | Linux privilege escalation script |
 | [GTFObins](https://gtfobins.github.io/) | Unix misconfigured binaries |
 
-### Domain & ip addresses
+## Domain & ip addresses
+
 | __Address__ | __Description__ |
 | --- | --- |
 | [DNS leak test](https://dnsleaktest.com/) | Test DNS leak |
@@ -23,13 +25,15 @@
 | [Wappalyzer](https://www.wappalyzer.com/) | Identify technologies on websites |
 | [Web archive](https://web.archive.org/) | Websites time machine |
 
-### Passwords & hash
+## Passwords & hash
+
 | __Address__ | __Description__ |
 | --- | --- |
 | [Crackstation](https://crackstation.net/) | Password hash cracker |
 | [SRI Hash Generator](https://www.srihash.org/) | W3C hash generator |
 
-### Social engineering
+## Social engineering
+
 | __Address__ | __Description__ |
 | --- | --- |
 | [Go phish](https://getgophish.com/) | Phishing framework |

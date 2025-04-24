@@ -1,4 +1,5 @@
-### Operators
+## Operators
+
 `site:<domain>`
 `intext:<string>`
 `filetype:<extension>`
@@ -7,8 +8,11 @@
 `after:<yyyy-mm-dd>`
 `location:<string>`
 `inurl:<string>`
+
 ___
-### Examples
+
+## Examples
+
 ```
 site:pastebin.com intext:"admin password"
 ```

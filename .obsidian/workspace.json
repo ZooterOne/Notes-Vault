@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/dotnet.md",
-                "mode": "source",
+                "file": "README.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "dotnet"
+              "title": "README"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "421e66ccd099bc55",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Hacking/ffuf.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for ffuf"
             }
           },
           {
@@ -165,32 +165,32 @@
   },
   "active": "51524596d22c4db5",
   "lastOpenFiles": [
-    "Windows/Users.md",
-    "Windows/Task scheduling.md",
-    "Hacking/Windows privilege escalation.md",
-    "Windows/Networking.md",
-    "Windows/System checks.md",
-    "Windows/Configuration.md",
-    "Windows/Useful commands.md",
-    "Hacking/Useful websites.md",
-    "Linux/distrobox.md",
-    "Hacking/Kali installation.md",
-    "Programming/dotnet.md",
-    "Linux/Useful commands.md",
-    "Linux/dd.md",
-    "Linux/Waydroid.md",
-    "Untitled.md",
-    "README.md",
-    "Hacking/Linux privilege escalation.md",
-    "Networking/ssh.md",
+    "Hacking/ffuf.md",
+    "Hacking/Exploiting smtp.md",
     "Hacking/Exploiting shares.md",
+    "Hacking/Domain recon.md",
     "Hacking/Active recon.md",
-    "Hacking/tcpdump.md",
-    "Hacking/steghide.md",
-    "Hacking/SMB shares.md",
-    "Hacking/Searchsploit.md",
-    "Hacking/Proxychains.md",
-    "Hacking/PHP web shell.md",
+    "Windows/Users.md",
+    "Windows/Useful commands.md",
+    "Windows/Usb drive formatting.md",
+    "Windows/Task scheduling.md",
+    "Windows/System checks.md",
+    "Windows/Networking.md",
+    "Windows/Configuration.md",
+    "Programming/SQL database.md",
+    "Programming/Python.md",
+    "Programming/git.md",
+    "Programming/dotnet.md",
+    "Programming/Docker.md",
+    "Programming/Django.md",
+    "Others/Useful commands.md",
+    "Others/Google search.md",
+    "Networking/Useful commands.md",
+    "Networking/ssh.md",
+    "Networking/Fedora ssh setup.md",
+    "Networking/Fedora firewall setup.md",
+    "Networking/Debian firewall setup.md",
+    "Networking/Common ports.md",
     "Untitled",
     "Hacking",
     "Others",

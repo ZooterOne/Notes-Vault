@@ -1,7 +1,9 @@
-### Scan ports
+## Scan ports
+
 ```
 nmap <ip> [options]
 ```
+
 Options:
 - `-p <port_range>`_: only provided ports._
 - `-p-`_: all ports._
@@ -13,11 +15,15 @@ Options:
 - `-f`_: fragment the packets into 8 byte-fragments._
 - `-ff`_: fragment the packets into 16 byte-fragments._
 - `-D RND:<#>`_: generate random decoy addresses._
+
 ___
-### Ping scan
+
+## Ping scan
+
 ```
 nmap -sn <ip_range> [options]
 ```
+
 Options:
 - `-A`_: run OS & version detection and scripts._
 - `-sC`_: run default scripts._
