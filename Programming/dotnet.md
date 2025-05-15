@@ -49,6 +49,12 @@ dotnet list package
 list all the packages.
 
 ```
+dotnet list package --vulnerable
+```
+
+list all the vulnerable packages.
+
+```
 dotnet add package <package> [-v <version>]
 ```
 

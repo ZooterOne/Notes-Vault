@@ -4,18 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "cf3a13bed0b917f1",
+        "id": "4e1fdf24eca44bbc",
         "type": "tabs",
         "children": [
           {
-            "id": "51524596d22c4db5",
+            "id": "94a932776ec701ba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "README.md",
                 "mode": "preview",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
               "title": "README"
@@ -163,8 +163,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "51524596d22c4db5",
+  "active": "94a932776ec701ba",
   "lastOpenFiles": [
+    "Programming/dotnet.md",
+    "Linux/Flatpak.md",
     "Linux/dnf.md",
     "README.md",
     "Hacking/ffuf.md",
@@ -182,7 +184,6 @@
     "Programming/SQL database.md",
     "Programming/Python.md",
     "Programming/git.md",
-    "Programming/dotnet.md",
     "Programming/Docker.md",
     "Programming/Django.md",
     "Others/Useful commands.md",
@@ -190,7 +191,6 @@
     "Networking/Useful commands.md",
     "Networking/ssh.md",
     "Networking/Fedora ssh setup.md",
-    "Networking/Fedora firewall setup.md",
     "Untitled",
     "Hacking",
     "Others",
