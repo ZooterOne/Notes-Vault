@@ -12,4 +12,8 @@ Go to [https://www.google.com/android/uncertified](https://www.google.com/androi
 sudo waydroid session stop
 ```
 
-Remove menu entry from `.local/share/applications/waydroid.*`.
+```
+truncate -s 0 ~/.local/share/applications/waydroid.*.desktop
+```
+
+remove menu entry from `~/.local/share/applications/`.
