@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8e3b0b08bffc7375",
+        "id": "4ce83f55d6e155e0",
         "type": "tabs",
         "children": [
           {
-            "id": "74d56e50c8ff3d2e",
+            "id": "1b42720785c09de2",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -159,9 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "74d56e50c8ff3d2e",
+  "active": "1b42720785c09de2",
   "lastOpenFiles": [
     "Programming/git.md",
+    "Hacking/Useful websites.md",
+    "Others/Useful websites.md",
     "Linux/Waydroid.md",
     "README.md",
     "Programming/dotnet.md",
@@ -185,8 +187,6 @@
     "Programming/Django.md",
     "Others/Useful commands.md",
     "Others/Google search.md",
-    "Networking/Useful commands.md",
-    "Networking/ssh.md",
     "Untitled",
     "Hacking",
     "Others",

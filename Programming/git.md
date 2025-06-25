@@ -11,13 +11,13 @@ gh auth login
 login to github.
 
 ```
-git config user.name <username>
+git config [--global] user.name <username>
 ```
 
 define author's name for current repository.
 
 ```
-git config user.email <email>
+git config [--global] user.email <email>
 ```
 
 define author's email for current repository.
@@ -62,6 +62,24 @@ git log --author="<string>"
 
 display the history filtering using author search.
 
+```
+git log --follow <file>
+```
+
+show the commits that changed the file.
+
+```
+git log branch1...branch2
+```
+
+show the commits on branch2 that are not on branch1.
+
+```
+git diff branch1...branch2
+```
+
+show the diff of what is in branch2 that is not in branch1.
+
 ___
 
 ## Manage files
@@ -97,6 +115,12 @@ git diff
 show unstaged changes.
 
 ```
+git diff --staged
+```
+
+show staged changes.
+
+```
 git diff HEAD [<file>]
 ```
 
@@ -107,6 +131,18 @@ git restore <file>
 ```
 
 discard changes.
+
+```
+git reset <file>
+```
+
+unstage file while keeping the changes.
+
+```
+git rm <file>
+```
+
+delete the file and stage removal.
 
 ___
 

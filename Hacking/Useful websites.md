@@ -39,3 +39,14 @@
 | [Go phish](https://getgophish.com/) | Phishing framework |
 | [The Social Engineering Toolkit](https://trustedsec.com/resources/tools/the-social-engineer-toolkit-set) | Social engineering toolset |
 | [Lock screen awareness](https://eyelockmyscreen.com/) | Lock screen awareness page |
+
+## Practice
+
+| __Address__ | __Description__ |
+| --- | --- |
+| [Over The Wire](https://overthewire.org/wargames/) | Learn & practice security concepts |
+| [Pico CTF](https://picoctf.org/) | Capture the flag puzzles |
+| [iximiuz Labs](https://labs.iximiuz.com/) | Playgrounds on networking and containers |
+| [Sad Severs](https://sadservers.com/) | Fix server issues |
+| [Try Hack Me](https://tryhackme.com/) | Hacking challenges |
+| [Hack The Box](https://www.hackthebox.com/hacker/hacking-labs) | Hackable machines |
