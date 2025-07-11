@@ -1,7 +1,7 @@
 ## Create a solution
 
 ```
-dotnet new sln <solution>
+dotnet new sln --name <solution>
 ```
 
 create a new solution.

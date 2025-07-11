@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4ce83f55d6e155e0",
+        "id": "4c9fe3d229dbfcf3",
         "type": "tabs",
         "children": [
           {
-            "id": "1b42720785c09de2",
+            "id": "f20256e4b29828c0",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -159,14 +159,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1b42720785c09de2",
+  "active": "f20256e4b29828c0",
   "lastOpenFiles": [
+    "Linux/apt.md",
+    "Linux/dd.md",
+    "Linux/Useful commands.md",
+    "Programming/dotnet.md",
     "Programming/git.md",
     "Hacking/Useful websites.md",
     "Others/Useful websites.md",
     "Linux/Waydroid.md",
     "README.md",
-    "Programming/dotnet.md",
     "Linux/Flatpak.md",
     "Linux/dnf.md",
     "Hacking/ffuf.md",
@@ -184,9 +187,6 @@
     "Programming/SQL database.md",
     "Programming/Python.md",
     "Programming/Docker.md",
-    "Programming/Django.md",
-    "Others/Useful commands.md",
-    "Others/Google search.md",
     "Untitled",
     "Hacking",
     "Others",

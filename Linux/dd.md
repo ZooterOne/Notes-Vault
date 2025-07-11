@@ -17,7 +17,13 @@ dd if=<file> of=/dev/<device>
 restore image.
 
 ```
-sudo dd if=<file> of=/dev/sd<X> bs=4M status=progress
+sudo dd if=<file> of=/dev/sd<X> conv=fsync bs=4M status=progress
 ```
 
 generate bootable usb drive.
+
+```
+sudo fdisk -l
+```
+
+display disks and partitions.

@@ -12,6 +12,12 @@ apt upgrade
 
 update all packages.
 
+```
+sudo apt update && sudo apt full-upgrade -y
+```
+
+full system update.
+
 ___
 
 ## Search
