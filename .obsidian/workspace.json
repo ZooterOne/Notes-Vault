@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4c9fe3d229dbfcf3",
+        "id": "0ae20e52d0f97a4a",
         "type": "tabs",
         "children": [
           {
-            "id": "f20256e4b29828c0",
+            "id": "334b23743c22cd12",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -159,8 +159,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f20256e4b29828c0",
+  "active": "334b23743c22cd12",
   "lastOpenFiles": [
+    "Hacking/Kali installation.md",
     "Linux/apt.md",
     "Linux/dd.md",
     "Linux/Useful commands.md",
@@ -186,7 +187,6 @@
     "Windows/Configuration.md",
     "Programming/SQL database.md",
     "Programming/Python.md",
-    "Programming/Docker.md",
     "Untitled",
     "Hacking",
     "Others",

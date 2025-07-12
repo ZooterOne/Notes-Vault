@@ -9,11 +9,16 @@ install top10 from minimal installation (container `docker.io/kalilinux/kali-rol
 List of packages: `https://www.kali.org/tools/kali-meta/`
 
 ```
-apt update
-apt upgrade
+apt update && apt full-upgrade -y
 ```
 
 update system.
+
+```
+kali-tweaks
+```
+
+run system tweaks.
 
 ```
 apt install dirb dirbuster gobuster hashcat whois wordlists
