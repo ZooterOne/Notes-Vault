@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0ae20e52d0f97a4a",
+        "id": "ee9b873fc1353ebd",
         "type": "tabs",
         "children": [
           {
-            "id": "334b23743c22cd12",
+            "id": "92aedcc50f6b1d59",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Hacking/Kali installation.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Kali installation"
             }
           }
         ]
@@ -159,9 +163,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "334b23743c22cd12",
+  "active": "92aedcc50f6b1d59",
   "lastOpenFiles": [
+    "Linux/distrobox.md",
     "Hacking/Kali installation.md",
+    "Others/Google search.md",
+    "Others/muOS.md",
     "Linux/apt.md",
     "Linux/dd.md",
     "Linux/Useful commands.md",
@@ -184,9 +191,6 @@
     "Windows/Task scheduling.md",
     "Windows/System checks.md",
     "Windows/Networking.md",
-    "Windows/Configuration.md",
-    "Programming/SQL database.md",
-    "Programming/Python.md",
     "Untitled",
     "Hacking",
     "Others",

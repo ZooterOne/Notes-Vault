@@ -1,18 +1,42 @@
+# Regular installation
+
 _select top10 only during installation._
 
 ```
-apt install kali-linux-top10
+sudo apt install kali-tools-top10
 ```
 
-install top10 from minimal installation (container `docker.io/kalilinux/kali-rolling:latest`).
-
-List of packages: `https://www.kali.org/tools/kali-meta/`
+install top10 from minimal installation.
 
 ```
-apt update && apt full-upgrade -y
+sudo apt update && apt full-upgrade -y
 ```
 
 update system.
+
+# Distrobox installation
+
+```
+distrobox create Kali docker.io/kalilinux/kali-rolling:latest --home <path>
+```
+
+create a Kali box.
+
+```
+distrobox enter Kali
+```
+
+enter the Kali box.
+
+```
+sudo apt install kali-system-cli kali-linux-core kali-tools-top10 kali-tweaks -y
+```
+
+install minimal tools.
+
+# Common
+
+List of packages: `https://www.kali.org/tools/kali-meta/`
 
 ```
 kali-tweaks
@@ -21,25 +45,27 @@ kali-tweaks
 run system tweaks.
 
 ```
-apt install dirb dirbuster gobuster hashcat whois wordlists
+sudo apt install dirb dirbuster gobuster hashcat whois wordlists
 ```
 
 install basic packages.
 
 ```
-apt install fern-wifi-cracker
-apt install wifite
-apt install steghide
-apt install theharvester
-apt install autopsy
-apt install enum4linux
+sudo apt install fern-wifi-cracker
+sudo apt install wifite
+sudo apt install steghide
+sudo apt install theharvester
+sudo apt install autopsy
+sudo apt install enum4linux
 ```
 
 install optional packages.
 
+# Boxes
+
 ```
-apt install spice-vdagent
-apt install spice-webdavd
+sudo apt install spice-vdagent
+sudo apt install spice-webdavd
 ```
 
 enable directory share when using Boxes.
