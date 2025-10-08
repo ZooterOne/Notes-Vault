@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ee9b873fc1353ebd",
+        "id": "23507be2467a9401",
         "type": "tabs",
         "children": [
           {
-            "id": "92aedcc50f6b1d59",
+            "id": "feeb0e395fb68cae",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Hacking/Kali installation.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Kali installation"
+              "title": "New tab"
             }
           }
         ]
@@ -155,6 +151,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -163,10 +160,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "92aedcc50f6b1d59",
+  "active": "0c5bb19e6cfa4496",
   "lastOpenFiles": [
-    "Linux/distrobox.md",
     "Hacking/Kali installation.md",
+    "Linux/distrobox.md",
     "Others/Google search.md",
     "Others/muOS.md",
     "Linux/apt.md",

@@ -39,7 +39,7 @@ ___
 ## Status
 
 ```
-git status
+git status [--short]
 ```
 
 display the state of the working directory.
@@ -50,6 +50,40 @@ git log
 
 display the commit history.
 
+```
+git log -<n>
+```
+
+display the last n commit.
+
+```
+git log --stat
+```
+
+display the commit history with a list of modified files.
+
+```
+git log --pretty=oneline
+```
+
+display the commit history as one single line per commit.
+
+```
+git log --pretty=format:"%H - %an - %ar : %s"
+```
+
+display the commit history with a specific format.
+ - *%H*: _Commit hash_
+ - *%an*: _Author name_
+ - *%ar*: _Author relative date_
+ - *%s*: _Subject_
+
+```
+git log --graph
+```
+
+display the commit history as a graph.
+ 
 ```
 git log --grep="<string>"
 ```
@@ -97,6 +131,12 @@ git commit -m "<message>"
 commit staged changes.
 
 ```
+git commit --amend
+```
+
+commit additional changes to last local commit, replacing the previous commit with a new one.
+
+```
 git pull origin
 ```
 
@@ -127,6 +167,12 @@ git diff HEAD [<file>]
 show differences between working directory and last commit.
 
 ```
+git reset HEAD <file>
+```
+
+unstage a staged file.
+
+```
 git restore <file>
 ```
 
@@ -143,6 +189,12 @@ git rm <file>
 ```
 
 delete the file and stage removal.
+
+```
+git mv <file> <newfile>
+```
+
+move the file to a new location/rename the file.
 
 ___
 
@@ -177,3 +229,19 @@ git push origin <branch>
 ```
 
 push commit to branch.
+
+```
+git rebase <branch>
+```
+
+rebase _branch_ with the current branch, replaying commits from the current branch on top of _branch_. The current branch still needs to be merged to apply changes with `git checkout <branch>` and `git merge <rebased>`.
+
+___
+
+## Remotes
+
+```
+git remote show origin
+```
+
+show origin remote information.
