@@ -17,22 +17,16 @@ update system.
 # Distrobox installation
 
 ```
-distrobox create Kali docker.io/kalilinux/kali-rolling:latest --home <path>
+distrobox create --name Kali --image docker.io/kalilinux/kali-rolling:latest --home <path> --hostname Kali --init-hooks "sudo apt install kali-system-cli kali-linux-core kali-tools-top10 kali-tweaks -y" --unshare-all --init --additional-flags "--network=bridge"
 ```
 
-create a Kali box.
+create an isolated Kali box and install minimal tools.
 
 ```
 distrobox enter Kali
 ```
 
 enter the Kali box.
-
-```
-sudo apt install kali-system-cli kali-linux-core kali-tools-top10 kali-tweaks -y
-```
-
-install minimal tools.
 
 # Common
 

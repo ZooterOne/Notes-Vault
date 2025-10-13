@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0f5a62bf6a6609d5",
+        "id": "81535d41c3d85864",
         "type": "tabs",
         "children": [
           {
-            "id": "ea98e935b6bd4531",
+            "id": "3d3b159885ea6bf6",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -160,8 +160,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0c5bb19e6cfa4496",
+  "active": "3d3b159885ea6bf6",
   "lastOpenFiles": [
+    "Hacking/Proxychains.md",
     "Hacking/Kali installation.md",
     "Linux/distrobox.md",
     "Others/Google search.md",
@@ -187,7 +188,6 @@
     "Windows/Usb drive formatting.md",
     "Windows/Task scheduling.md",
     "Windows/System checks.md",
-    "Windows/Networking.md",
     "Untitled",
     "Hacking",
     "Others",
