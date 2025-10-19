@@ -7,7 +7,7 @@ ssh bandit<n>@bandit.labs.overthewire.org -p 2220
 Password is stored in a file called **readme**.
 
 ```
-more readme
+cat readme
 ```
 
 password: `ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If`
@@ -17,7 +17,7 @@ password: `ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If`
 Password is stored in a file called **-**.
 
 ```
-more \-
+cat \-
 ```
 
 password: `263JGJPfgU6LtdEvgfWU1XP5yac29mFx`
@@ -27,7 +27,7 @@ password: `263JGJPfgU6LtdEvgfWU1XP5yac29mFx`
 Password is stored in a file called **--spaces in this filename--**.
 
 ```
-more -- --spaces\ in\ this\ filename--
+cat -- --spaces\ in\ this\ filename--
 ```
 
 password: `MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx`
@@ -38,7 +38,7 @@ Password is stored in a hidden file in the **inhere** directory.
 
 ```
 ls -al inhere/
-more inhere/...Hiding-From-You
+cat inhere/...Hiding-From-You
 ```
 
 password: `2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ`
@@ -49,7 +49,7 @@ Password is stored in the only human-readable file in the **inhere** directory.
 
 ```
 file inhere/*
-more inhere/-file07
+cat inhere/-file07
 ```
 
 password: `4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw`
@@ -63,7 +63,7 @@ Password is stored in a file under the **inhere** directory and has all of the f
 
 ```
 find inhere/ -size 1033c
-more inhere/maybehere07/.file2
+cat inhere/maybehere07/.file2
 ```
 
 password: `HWasnPhtq9AVKe0dmk45nxy20cvUa6EG`
@@ -77,7 +77,7 @@ Password is stored in somewhere on the server and has all of the following prope
 
 ```
 find / -type f -size 33c -group bandit6 -user bandit7 2> /dev/null
-more /var/lib/dpkg/info/bandit7.password
+cat /var/lib/dpkg/info/bandit7.password
 ```
 
 password: `morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj`
@@ -154,7 +154,7 @@ Password is stored in **/etc/bandit_pass/bandit14** and can only be read by user
 scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private ./
 chmod 700 sshkey.private
 ssh bandit14@bandit.labs.overthewire.org -p 2220 -i sshkey.private
-more /etc/bandit_pass/bandit14
+cat /etc/bandit_pass/bandit14
 ```
 
 password: `MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS`
@@ -214,3 +214,55 @@ password: `cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8`
 # Level 19
 
 Password can be found in **/etc/bandit_pass**, after using the setuid binary in the home directory.
+
+```
+./bandit20-do cat /etc/bandit_pass/bandit20
+```
+
+password: `0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO`
+
+# Level 20
+
+The setuid binary in the home directory makes a connection to localhost on the specified port (command line argument). It then reads a line of text from the connection and compares it to the password of the current level. If the password is correct, it will transmit the password for the next level.
+
+```
+echo '0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO' | nc -l -p 4444 &
+./suconnect 4444
+```
+
+password: `EeoULMCra2q0dSkYj561DX7s1CpBuOBt`
+
+# Level 21
+
+A program is running automatically at regular intervals from **cron**. Look in **/etc/cron.d/** for the configuration and see what command is being executed.
+
+```
+cat /etc/cron.d/cronjob_bandit22
+cat /usr/bin/cronjob_bandit22.sh
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+```
+
+password: `tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q`
+
+# Level 22
+
+A program is running automatically at regular intervals from **cron**. Look in **/etc/cron.d/** for the configuration and see what command is being executed.
+
+```
+cat /etc/cron.d/cronjob_bandit23
+cat /usr/bin/cronjob_bandit23.sh
+cat /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)
+```
+
+password: `0Zf11ioIjMVN551jX3CmStKLYqjk54Ga`
+
+# Level 23
+
+A program is running automatically at regular intervals from **cron**. Look in **/etc/cron.d/** for the configuration and see what command is being executed.
+
+```
+cat /etc/cron.d/cronjob_bandit24
+cat /usr/bin/cronjob_bandit24.sh
+```
+
+TMP note: /var/spool/bandit24

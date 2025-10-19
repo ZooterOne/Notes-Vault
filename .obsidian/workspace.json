@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "97ce005bebcf2e25",
+        "id": "3d7c6c1173206e32",
         "type": "tabs",
         "children": [
           {
-            "id": "af5f80f67563a9e4",
+            "id": "b870b5835f7f1712",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "OverTheWire/Bandit.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Bandit"
             }
           }
         ]
@@ -160,9 +164,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "af5f80f67563a9e4",
+  "active": "b870b5835f7f1712",
   "lastOpenFiles": [
+    "Linux/Useful commands.md",
     "OverTheWire/Bandit.md",
+    "Linux/File hash.md",
     "Hacking/Proxychains.md",
     "Hacking/Kali installation.md",
     "Linux/distrobox.md",
@@ -170,7 +176,6 @@
     "Others/muOS.md",
     "Linux/apt.md",
     "Linux/dd.md",
-    "Linux/Useful commands.md",
     "Programming/dotnet.md",
     "Programming/git.md",
     "Hacking/Useful websites.md",
@@ -187,7 +192,6 @@
     "Windows/Users.md",
     "Windows/Useful commands.md",
     "Windows/Usb drive formatting.md",
-    "Windows/Task scheduling.md",
     "Untitled",
     "Hacking",
     "Others",

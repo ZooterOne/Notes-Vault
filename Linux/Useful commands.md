@@ -43,6 +43,12 @@ wc -l <file>
 
 display number of lines of the file.
 
+```
+stat -c "%n (%F): %a %A %u %U %G" <file>
+```
+
+display the permissions of a file.
+
 ___
 
 ## File system
