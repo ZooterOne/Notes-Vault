@@ -289,5 +289,18 @@ password: `gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8`
 A daemon is listening on port **30002** and will give you the password if given the previous password and a secret numeric 4-digit pincode. There is no way to retrieve the pincode except by brute-forcing.
 
 ```
+for pincode in {0000..9999}; do echo gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8 $pincode; done | nc localhost 30002 | grep -v Wrong
+```
+
+password: `iCi86ttT4KSNe1armKiwbQNmB3YJP3q4`
+
+# Level 25
+
+The shell for user bandit26 is not **/bin/bash**. Find out what it is, how it works and how to break out of it.
 
 ```
+proxychains scp -P 2220 bandit25@bandit.labs.overthewire.org:bandit26.sshkey ./
+cat /etc/passwd | grep bandit26
+```
+
+/usr/bin/showtext

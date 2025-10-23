@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3d7c6c1173206e32",
+        "id": "64e8538bd33017a9",
         "type": "tabs",
         "children": [
           {
-            "id": "b870b5835f7f1712",
+            "id": "d9294dd22643e1b6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OverTheWire/Bandit.md",
+                "file": "Challenges/OverTheWire/Bandit.md",
                 "mode": "source",
                 "source": false
               },
@@ -164,13 +164,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b870b5835f7f1712",
+  "active": "d9294dd22643e1b6",
   "lastOpenFiles": [
+    "Hacking/Kali installation.md",
+    "Challenges/OverTheWire/Bandit.md",
+    "Challenges/WebGoat/A1 - Broken Access Control.md",
+    "Challenges/WebGoat/ZAP Configuration.md",
+    "Challenges/WebGoat",
+    "Challenges",
     "Linux/Useful commands.md",
-    "OverTheWire/Bandit.md",
     "Linux/File hash.md",
     "Hacking/Proxychains.md",
-    "Hacking/Kali installation.md",
     "Linux/distrobox.md",
     "Others/Google search.md",
     "Others/muOS.md",
@@ -190,9 +194,6 @@
     "Hacking/Domain recon.md",
     "Hacking/Active recon.md",
     "Windows/Users.md",
-    "Windows/Useful commands.md",
-    "Windows/Usb drive formatting.md",
-    "Untitled",
     "Hacking",
     "Others",
     "Networking",
