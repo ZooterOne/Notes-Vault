@@ -22,3 +22,8 @@ Use `Resend with Request Editor` and
 
 ---
 # Missing Function Level Access Control
+
+## Relying on obscurity
+
+Parse css files and find `hidden-menu-item` in **ac.css**, which hides element. Search for `hidden-menu-item` in the html source. Hidden items are `Users` and `Config`.
+

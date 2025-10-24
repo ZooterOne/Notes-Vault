@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Challenges/OverTheWire/Bandit.md",
+                "file": "Challenges/WebGoat/A1 - Broken Access Control.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bandit"
+              "title": "A1 - Broken Access Control"
             }
           }
         ]
@@ -166,8 +166,8 @@
   },
   "active": "d9294dd22643e1b6",
   "lastOpenFiles": [
-    "Hacking/Kali installation.md",
     "Challenges/OverTheWire/Bandit.md",
+    "Hacking/Kali installation.md",
     "Challenges/WebGoat/A1 - Broken Access Control.md",
     "Challenges/WebGoat/ZAP Configuration.md",
     "Challenges/WebGoat",

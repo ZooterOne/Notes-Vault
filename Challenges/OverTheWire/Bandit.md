@@ -299,8 +299,44 @@ password: `iCi86ttT4KSNe1armKiwbQNmB3YJP3q4`
 The shell for user bandit26 is not **/bin/bash**. Find out what it is, how it works and how to break out of it.
 
 ```
-proxychains scp -P 2220 bandit25@bandit.labs.overthewire.org:bandit26.sshkey ./
+scp -P 2220 bandit25@bandit.labs.overthewire.org:bandit26.sshkey ./
+chmod 700 bandit26.sshkey
 cat /etc/passwd | grep bandit26
+more /usr/bin/showtext
 ```
 
-/usr/bin/showtext
+Resize the window to a very small size.
+
+```
+ssh bandit26@bandit.labs.overthewire.org -p 2220 -i bandit26.sshkey
+```
+
+When in the more command, press `v` to access Vim. Resize the window and run a Bash shell within Vim.
+
+```
+:set shell=/bin/bash
+:shell
+```
+
+```
+cat /etc/bandit_pass/bandit26
+```
+
+password: `s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ`
+
+# Level 26
+
+Good job getting a shell. Now grab the password for bandit27.
+
+Continue from the above steps.
+
+```
+./bandit27-do cat /etc/bandit_pass/bandit27
+exit
+```
+
+password: `upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB`
+
+
+# Level 27
+
