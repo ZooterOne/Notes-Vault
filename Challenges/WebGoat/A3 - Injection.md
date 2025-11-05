@@ -94,23 +94,29 @@ _Solution_: ***TBC***
 
 ## Quiz
 
-_What is the difference between a prepared statement and a statement?_
-Solution 4: A statement includes actual values, whereas a prepared statement uses placeholders.
+___Q___: _What is the difference between a prepared statement and a statement?_
 
-_Which one of the following characters is a placeholder for variables?_
-Solution 3: ?
+___A___: Solution 4: A statement includes actual values, whereas a prepared statement uses placeholders.
 
-_How can prepared statements be faster than statements?_
-Solution 2: Prepared statements are compiled once by the database management system and then reused with different inputs, reducing compilation overhead.
+___Q___: _Which one of the following characters is a placeholder for variables?_
 
-_How do prepared statements help prevent SQL injection?_
-Solution 2: Prepared statements are compiled once by the database management system and then reused with different inputs, reducing compilation overhead.
+___A___: Solution 3: ?
 
-_How do prepared statements help prevent SQL injection?_
-Solution 3: Placeholders prevent user input from being directly appended to the SQL query, ensuring a clear separation between code and data.
+___Q___: _How can prepared statements be faster than statements?_
 
-_What happens if a person with malicious intent enters the following input into a registration form that uses a prepared statement? Input: Robert); DROP TABLE Students;--_
-Solution 4: The database treats the entire input as a plain string: Robert); DROP TABLE Students;-- without executing it as SQL.
+___A___: Solution 2: Prepared statements are compiled once by the database management system and then reused with different inputs, reducing compilation overhead.
+
+___Q___: _How do prepared statements help prevent SQL injection?_
+
+___A___: Solution 2: Prepared statements are compiled once by the database management system and then reused with different inputs, reducing compilation overhead.
+
+___Q___: _How do prepared statements help prevent SQL injection?_
+
+___A___: Solution 3: Placeholders prevent user input from being directly appended to the SQL query, ensuring a clear separation between code and data.
+
+___Q___: _What happens if a person with malicious intent enters the following input into a registration form that uses a prepared statement? Input: Robert); DROP TABLE Students;--_
+
+___A___: Solution 4: The database treats the entire input as a plain string: Robert); DROP TABLE Students;-- without executing it as SQL.
 
 # SQL Injection (mitigation)
 
@@ -180,23 +186,72 @@ Url to use is `http://localhost:8080/WebGoat/start.mvc?username=username#test/%3
 
 ## Quiz
 
-_Is a well known website, like Netflix, immune to XSS attacks?_
-Solution 4: No, because the browser trusts the website if it is acknowledged trusted, then the browser does not know that the script is malicious.
+___Q___: _Is a well known website, like Netflix, immune to XSS attacks?_
 
-_When do XSS attacks occur?_
-Solution 3: When a website fails to validate or sanitize user input, allowing malicious scripts to be executed in a user's browser.
+___A___: Solution 4: No, because the browser trusts the website if it is acknowledged trusted, then the browser does not know that the script is malicious.
 
-_What are Stored XSS attacks?_
-Solution 1: The script is permanently stored on the server and the victim gets the malicious script when requesting information from the server.
+___Q___: _When do XSS attacks occur?_
 
-_What are Reflected XSS attacks?_
-Solution 2: They reflect the injected script off the web server. That occurs when input sent to the web server is part of the response.
+___A___: Solution 3: When a website fails to validate or sanitize user input, allowing malicious scripts to be executed in a user's browser.
 
-_Is JavaScript the only way to perform XSS attacks?_
-Solution 4: No, there are many other ways. Like HTML, Flash or any other type of code that the browser executes.
+___Q___: _What are Stored XSS attacks?_
+
+___A___: Solution 1: The script is permanently stored on the server and the victim gets the malicious script when requesting information from the server.
+
+___Q___: _What are Reflected XSS attacks?_
+
+___A___: Solution 2: They reflect the injected script off the web server. That occurs when input sent to the web server is part of the response.
+
+___Q___: _Is JavaScript the only way to perform XSS attacks?_
+
+___A___: Solution 4: No, there are many other ways. Like HTML, Flash or any other type of code that the browser executes.
 
 # Cross Site Scripting (stored)
 
 _Challenge_: add a comment with a JavaScript payload(`webgoat.customjs.phoneHome`).
 
 _Solution_: `<script>webgoat.customjs.phoneHome()</script>`. Random number is `912173590`.
+
+# Cross Site Scripting (mitigation)
+
+***TBC***
+
+# Path traversal
+
+## Path traversal while uploading files
+
+_Challenge_: overwrite a specific file on the file system (`<webgoat path>/PathTraversal`).
+
+_Solution_: use update button to observe the full path of the file.
+
+Full Name: `../anything`
+
+## Path traversal while uploading files
+
+_Challenge_: overwrite a specific file on the file system (`<webgoat path>/PathTraversal`) on a version with a fix implemented.
+
+_Solution_: Use update button to observe the full path of the file. Try previous solution to observe fix.
+
+Full Name: `....//anything`
+
+## Path traversal while uploading files
+
+_Challenge_: overwrite a specific file on the file system (`<webgoat path>/PathTraversal`) on a version with a fix implemented.
+
+_Solution_: use update button to observe the full path of the file. Try previous solution to observe fix.
+
+Full Name: `....//anything`
+
+## Path traversal while uploading files
+
+_Challenge_: overwrite a specific file on the file system (`<webgoat path>/PathTraversal`) on a version with a fix implemented.
+
+_Solution_: use **Resend with Request Editor** and update the image path in the POST body to add `../`.
+
+## Retrieving other files with a path traversal
+
+_Challenge_: retrieve a file called `path-traversal-secret.jpg` from the system.
+
+_Solution_: observe the GET request when pressing `Show random cat picture`. Use **Resend with Request Editor** and change the request URL to `http://localhost:8080/WebGoat/PathTraversal/random-picture?id=%2E%2E%2F%2E%2E%2Fpath-traversal-secret`. Secret is SHA-512 of username: `05ee170f46fd6040a23ebd883d63ef3b2aff55e3d6e01eccbc401088d7de0c153251c27e517ea4ad9bed62980366d1a47ceb312a659e77debda650d870094562`.
+
+**Tip**: Use _Tools | Encode/Decode/Hash_ to encode path `../../`.
