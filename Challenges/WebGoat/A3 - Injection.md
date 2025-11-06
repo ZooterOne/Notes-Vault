@@ -86,12 +86,6 @@ _Solution_:
 - Password: `passW0rD`.
 - Alternative for Name: `' UNION SELECT userid,user_name, password, 'a', 'b', 'c', 1 from user_system_data --`.
 
-## Assignment
-
-_Challenge_: can you log in as **Tom**?
-
-_Solution_: ***TBC***
-
 ## Quiz
 
 ___Q___: _What is the difference between a prepared statement and a statement?_
@@ -155,12 +149,6 @@ _Challenge_: the developer fixed the possible SQL injection with filtering, spot
 
 _Solution_: `anything';/**/SELECT/**/*/**/FROM/**/user_system_data;--`.
 
-## Assignment
-
-_Challenge_: perform a SQL injection through the ORDER BY field and find the ip address of the `webgoat-prd` server (as in `xxx.130.219.202`).
-
-_Solution_: ***TBC***
-
 # Cross Site Scripting
 
 ## ## Reflected XSS
@@ -213,6 +201,42 @@ _Challenge_: add a comment with a JavaScript payload(`webgoat.customjs.phoneHome
 _Solution_: `<script>webgoat.customjs.phoneHome()</script>`. Random number is `912173590`.
 
 # Cross Site Scripting (mitigation)
+
+## Reflective XSS
+
+_Challenge_: prevent XSS by escaping the URL parameters in the JSP file.
+
+_Solution_: see [https://www.owasp.org/index.php/OWASP_Java_Encoder_Project](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project)
+
+``` html
+<%@ taglib uri="https://www.owasp.org/index.php/OWASP_Java_Encoder_Project" prefix="e" %>
+<html>
+<head>
+    <title>Using GET and POST Method to Read Form Data</title>
+</head>
+<body>
+    <h1>Using POST Method to Read Form Data</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td><b>First Name:</b></td>
+                <td>${e:forHtml(param.first_name)}</td>
+            </tr>
+            <tr>
+                <td><b>Last Name:</b></td>
+                <td>${e:forHtml(param.last_name)}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+```
+
+## Stored XSS
+
+_Challenge_: prevent XSS by creating a clean string inside the saveNewComment() function. Use the "antisamy-slashdot.xml" as a policy file.
+
+_Solution_: see [https://github.com/nahsra/antisamy](https://github.com/nahsra/antisamy)
 
 ***TBC***
 

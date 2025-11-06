@@ -64,4 +64,7 @@ ___
 
 # Spoofing an Authentication Cookie
 
-***TBC***
+_Challenge_: attempt to bypass the authentication mechanism by spoofing an authentication cookie and log in as **Tom**.
+
+_Solution_: login as webgoat and admin, using the provided credentials. Observe the following cookies being created `N2E2ODcyNjk3NDUxNjE0YTVhNDc3NDYxNmY2NzYyNjU3Nw==` and `N2E2ODcyNjk3NDUxNjE0YTVhNDc2ZTY5NmQ2NDYx`. Decode using base64 and isolate common part `7a6872697451614a5a47` and non common part of each cookie, giving `74616f67626577` and `6e696d6461`. Decoding using **Tools | Ecode/Decode/Hash** gives `taogbew` and `nimda` (reverse of _webgoat_ and _admin_). Reverse _Tom_, encode and append to the common part, then encode using base64, giving `N2E2ODcyNjk3NDUxNjE0YTVhNDc2RDZGNTQ=`.
+Add `; spoof_auth=N2E2ODcyNjk3NDUxNjE0YTVhNDc2RDZGNTQ=` to the Cookie line of the POST request and re-send.
