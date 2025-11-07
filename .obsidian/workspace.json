@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Challenges/WebGoat/A3 - Injection.md",
+                "file": "Challenges/WebGoat/A2 - Cryptographic Failures.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "A3 - Injection"
+              "title": "A2 - Cryptographic Failures"
             }
           }
         ]
@@ -166,11 +166,15 @@
   },
   "active": "d9294dd22643e1b6",
   "lastOpenFiles": [
-    "Challenges/WebGoat/A5 - Security Misconfiguration.md",
     "Challenges/WebGoat/A3 - Injection.md",
+    "Challenges/WebGoat/A5 - Security Misconfiguration.md",
+    "Challenges/WebGoat/A7 - Identity & Auth Failure.md",
+    "Hacking/Useful websites.md",
+    "Networking/Useful commands.md",
+    "Others/Useful websites.md",
+    "Challenges/OverTheWire/Bandit.md",
     "Challenges/WebGoat/A1 - Broken Access Control.md",
     "Challenges/WebGoat/A2 - Cryptographic Failures.md",
-    "Challenges/OverTheWire/Bandit.md",
     "Hacking/Kali installation.md",
     "Challenges/WebGoat/ZAP Configuration.md",
     "Challenges/WebGoat",
@@ -185,15 +189,11 @@
     "Linux/dd.md",
     "Programming/dotnet.md",
     "Programming/git.md",
-    "Hacking/Useful websites.md",
-    "Others/Useful websites.md",
     "Linux/Waydroid.md",
     "README.md",
     "Linux/Flatpak.md",
     "Linux/dnf.md",
     "Hacking/ffuf.md",
-    "Hacking/Exploiting smtp.md",
-    "Hacking/Exploiting shares.md",
     "Hacking",
     "Others",
     "Networking",
