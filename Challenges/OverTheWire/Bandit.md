@@ -340,3 +340,71 @@ password: `upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB`
 
 # Level 27
 
+There is a git repository at `ssh://bandit27-git@bandit.labs.overthewire.org/home/bandit27-git/repo` via the port `2220`. The password for the user `bandit27-git` is the same as for the user `bandit27`. Clone the repository and find the password for the next level.
+
+```
+git clone ssh://bandit27-git@bandit.labs.overthewire.org:2220/home/bandit27-git/repo
+cat repo/README
+```
+
+password: `Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN`
+
+# Level 28
+
+There is a git repository at `ssh://bandit28-git@bandit.labs.overthewire.org/home/bandit28-git/repo` via the port `2220`. The password for the user `bandit28-git` is the same as for the user `bandit28`. Clone the repository and find the password for the next level.
+
+```
+git clone ssh://bandit28-git@bandit.labs.overthewire.org:2220/home/bandit28-git/repo
+cd repo
+git log
+git diff d0cf2ab7dd7ebc6075b59102a980155268f0fe8f README.md 
+```
+
+password: `4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7`
+
+# Level 29
+
+There is a git repository at `ssh://bandit29-git@bandit.labs.overthewire.org/home/bandit29-git/repo` via the port `2220`. The password for the user `bandit29-git` is the same as for the user `bandit29`. Clone the repository and find the password for the next level.
+
+```
+git clone ssh://bandit29-git@bandit.labs.overthewire.org:2220/home/bandit29-git/repo
+cd repo
+git log --all
+git checkout origin/dev
+cat README.md
+```
+
+password: `qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL`
+
+# Level 30
+
+There is a git repository at `ssh://bandit30-git@bandit.labs.overthewire.org/home/bandit30-git/repo` via the port `2220`. The password for the user `bandit30-git` is the same as for the user `bandit30`. Clone the repository and find the password for the next level.
+
+```
+git clone ssh://bandit30-git@bandit.labs.overthewire.org:2220/home/bandit30-git/repo
+cd repo
+git tag
+git show secret
+```
+
+password: `fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy`
+
+# Level 31
+
+There is a git repository at `ssh://bandit31-git@bandit.labs.overthewire.org/home/bandit31-git/repo` via the port `2220`. The password for the user `bandit31-git` is the same as for the user `bandit31`. Clone the repository and find the password for the next level.
+
+```
+git clone ssh://bandit31-git@bandit.labs.overthewire.org:2220/home/bandit31-git/repo
+cd repo
+cat README.md
+echo May I come in\? > key.txt\
+rm .gitignore
+git add .
+git config user.email bandit31-git@bandit.labs.overthewire.org
+git config user.name bandit31-git
+git commit -m 'key.txt'
+git push
+```
+
+password: `3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K`
+
