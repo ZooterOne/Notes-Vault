@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Challenges/WebGoat/A7 - Identity & Auth Failure.md",
+                "file": "Challenges/OverTheWire/Natas.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "A7 - Identity & Auth Failure"
+              "title": "Natas"
             }
           }
         ]
@@ -167,10 +167,11 @@
   "active": "662c48ae87381c81",
   "lastOpenFiles": [
     "Challenges/OverTheWire/Bandit.md",
+    "Challenges/OverTheWire/Natas.md",
+    "Challenges/WebGoat/A7 - Identity & Auth Failure.md",
     "Challenges/WebGoat/A2 - Cryptographic Failures.md",
     "Challenges/WebGoat/A3 - Injection.md",
     "Challenges/WebGoat/A5 - Security Misconfiguration.md",
-    "Challenges/WebGoat/A7 - Identity & Auth Failure.md",
     "Hacking/Useful websites.md",
     "Networking/Useful commands.md",
     "Others/Useful websites.md",
@@ -193,7 +194,6 @@
     "README.md",
     "Linux/Flatpak.md",
     "Linux/dnf.md",
-    "Hacking/ffuf.md",
     "Hacking",
     "Others",
     "Networking",

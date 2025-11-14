@@ -4,6 +4,10 @@ ssh bandit<n>@bandit.labs.overthewire.org -p 2220
 
 # Level 0
 
+password: `bandit0`.
+
+# Level 0 -> 1
+
 Password is stored in a file called **readme**.
 
 ```
@@ -12,7 +16,7 @@ cat readme
 
 password: `ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If`
 
-# Level 1
+# Level 1 -> 2
 
 Password is stored in a file called **-**.
 
@@ -22,7 +26,7 @@ cat \-
 
 password: `263JGJPfgU6LtdEvgfWU1XP5yac29mFx`
 
-# Level 2
+# Level 2 -> 3
 
 Password is stored in a file called **--spaces in this filename--**.
 
@@ -32,7 +36,7 @@ cat -- --spaces\ in\ this\ filename--
 
 password: `MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx`
 
-# Level 3
+# Level 3 -> 4
 
 Password is stored in a hidden file in the **inhere** directory.
 
@@ -43,7 +47,7 @@ cat inhere/...Hiding-From-You
 
 password: `2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ`
 
-# Level 4
+# Level 4 -> 5
 
 Password is stored in the only human-readable file in the **inhere** directory.
 
@@ -54,7 +58,7 @@ cat inhere/-file07
 
 password: `4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw`
 
-# Level 5
+# Level 5 -> 6
 
 Password is stored in a file under the **inhere** directory and has all of the following properties:
  - human-readable
@@ -68,7 +72,7 @@ cat inhere/maybehere07/.file2
 
 password: `HWasnPhtq9AVKe0dmk45nxy20cvUa6EG`
 
-# Level 6
+# Level 6 -> 7
 
 Password is stored in somewhere on the server and has all of the following properties:
  - owned by user bandit7
@@ -82,7 +86,7 @@ cat /var/lib/dpkg/info/bandit7.password
 
 password: `morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj`
 
-# Level 7
+# Level 7 -> 8
 
 Password is stored in the file **data.txt**, next to the word _millionth_.
 
@@ -92,7 +96,7 @@ strings data.txt | grep millionth
 
 password: `dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc`
 
-# Level 8
+# Level 8 -> 9
 
 Password is stored in the file **data.txt** and is the only line of text that occurs only once.
 
@@ -102,7 +106,7 @@ sort data.txt | uniq -u
 
 password: `4CKMh1JI91bUIZZPXDqGanal4xvAg0JM`
 
-# Level 9
+# Level 9 -> 10
 
 Password is stored in the file **data.txt**, in one of the few human-readable strings, preceded by several _=_ characters.
 
@@ -112,7 +116,7 @@ strings data.txt | grep -E '^={2,}'
 
 password: `FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey`
 
-# Level 10
+# Level 10 -> 11
 
 Password is stored in the file **data.txt**, which contains base64 encoded data.
 
@@ -122,7 +126,7 @@ base64 -d data.txt
 
 password: `dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr`
 
-# Level 11
+# Level 11 -> 12
 
 Password is stored in the file **data.txt**, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions.
 
@@ -132,7 +136,7 @@ strings data.txt | tr 'a-zA-Z' 'n-za-mN-ZA-M'
 
 password: `7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4`
 
-# Level 12
+# Level 12 -> 13
 
 Password is stored in the file **data.txt**, which is a hexdump of a file that has been repeatedly compressed.
 
@@ -146,7 +150,7 @@ cat data8.bin | gzip -d
 
 password: `FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn`
 
-# Level 13
+# Level 13 -> 14
 
 Password is stored in **/etc/bandit_pass/bandit14** and can only be read by user _bandit14_. A private SSH key that can be used to log into the next level is provided. 
 
@@ -159,7 +163,7 @@ cat /etc/bandit_pass/bandit14
 
 password: `MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS`
 
-# Level 14
+# Level 14 -> 15
 
 Password can be retrieved by submitting the password of the current level to port **30000** on localhost.
 
@@ -169,7 +173,7 @@ nc localhost 30000
 
 password: `8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo`
 
-# Level 15
+# Level 15 -> 16
 
 Password can be retrieved by submitting the password of the current level to port **30001** on localhost using SSL/TLS encryption.
 
@@ -179,7 +183,7 @@ openssl s_client -crlf -connect localhost:30001 -servername localhost
 
 password: `kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx`
 
-# Level 16
+# Level 16 -> 17
 
 Password can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000.
 
@@ -190,7 +194,7 @@ openssl s_client -crlf -connect localhost:31790 -servername localhost -quiet
 
 password: _rsa private key_
 
-# Level 17
+# Level 17 -> 18
 
 Password is in **passwords.new** and is the only line that has been changed between **passwords.old** and **passwords.new**.
 
@@ -200,7 +204,7 @@ diff passwords.old passwords.new
 
 password: `x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO`
 
-# Level 18
+# Level 18 -> 19
 
 Password is stored in a file **readme** in the home directory. Unfortunately, someone has modified **.bashrc** to log you out when you log in with SSH.
 
@@ -211,7 +215,7 @@ cat readme
 
 password: `cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8`
 
-# Level 19
+# Level 19 -> 20
 
 Password can be found in **/etc/bandit_pass**, after using the setuid binary in the home directory.
 
@@ -221,7 +225,7 @@ Password can be found in **/etc/bandit_pass**, after using the setuid binary in 
 
 password: `0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO`
 
-# Level 20
+# Level 20 -> 21
 
 The setuid binary in the home directory makes a connection to localhost on the specified port (command line argument). It then reads a line of text from the connection and compares it to the password of the current level. If the password is correct, it will transmit the password for the next level.
 
@@ -232,7 +236,7 @@ echo '0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO' | nc -l -p 4444 &
 
 password: `EeoULMCra2q0dSkYj561DX7s1CpBuOBt`
 
-# Level 21
+# Level 21 -> 22
 
 A program is running automatically at regular intervals from **cron**. Look in **/etc/cron.d/** for the configuration and see what command is being executed.
 
@@ -244,7 +248,7 @@ cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
 
 password: `tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q`
 
-# Level 22
+# Level 22 -> 23
 
 A program is running automatically at regular intervals from **cron**. Look in **/etc/cron.d/** for the configuration and see what command is being executed.
 
@@ -256,7 +260,7 @@ cat /tmp/$(echo I am user bandit23 | md5sum | cut -d ' ' -f 1)
 
 password: `0Zf11ioIjMVN551jX3CmStKLYqjk54Ga`
 
-# Level 23
+# Level 23 -> 24
 
 A program is running automatically at regular intervals from **cron**. Look in **/etc/cron.d/** for the configuration and see what command is being executed.
 
@@ -284,7 +288,7 @@ cat /tmp/Zoot23/pass.txt
 
 password: `gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8`
 
-# Level 24
+# Level 24 -> 25
 
 A daemon is listening on port **30002** and will give you the password if given the previous password and a secret numeric 4-digit pincode. There is no way to retrieve the pincode except by brute-forcing.
 
@@ -294,7 +298,7 @@ for pincode in {0000..9999}; do echo gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8 $pincode; 
 
 password: `iCi86ttT4KSNe1armKiwbQNmB3YJP3q4`
 
-# Level 25
+# Level 25 -> 26
 
 The shell for user bandit26 is not **/bin/bash**. Find out what it is, how it works and how to break out of it.
 
@@ -324,7 +328,7 @@ cat /etc/bandit_pass/bandit26
 
 password: `s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ`
 
-# Level 26
+# Level 26 -> 27
 
 Good job getting a shell. Now grab the password for bandit27.
 
@@ -338,7 +342,7 @@ exit
 password: `upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB`
 
 
-# Level 27
+# Level 27 -> 28
 
 There is a git repository at `ssh://bandit27-git@bandit.labs.overthewire.org/home/bandit27-git/repo` via the port `2220`. The password for the user `bandit27-git` is the same as for the user `bandit27`. Clone the repository and find the password for the next level.
 
@@ -349,7 +353,7 @@ cat repo/README
 
 password: `Yz9IpL0sBcCeuG7m9uQFt8ZNpS4HZRcN`
 
-# Level 28
+# Level 28 -> 29
 
 There is a git repository at `ssh://bandit28-git@bandit.labs.overthewire.org/home/bandit28-git/repo` via the port `2220`. The password for the user `bandit28-git` is the same as for the user `bandit28`. Clone the repository and find the password for the next level.
 
@@ -362,7 +366,7 @@ git diff d0cf2ab7dd7ebc6075b59102a980155268f0fe8f README.md
 
 password: `4pT1t5DENaYuqnqvadYs1oE4QLCdjmJ7`
 
-# Level 29
+# Level 29 -> 30
 
 There is a git repository at `ssh://bandit29-git@bandit.labs.overthewire.org/home/bandit29-git/repo` via the port `2220`. The password for the user `bandit29-git` is the same as for the user `bandit29`. Clone the repository and find the password for the next level.
 
@@ -376,7 +380,7 @@ cat README.md
 
 password: `qp30ex3VLz5MDG1n91YowTv4Q8l7CDZL`
 
-# Level 30
+# Level 30 -> 31
 
 There is a git repository at `ssh://bandit30-git@bandit.labs.overthewire.org/home/bandit30-git/repo` via the port `2220`. The password for the user `bandit30-git` is the same as for the user `bandit30`. Clone the repository and find the password for the next level.
 
@@ -389,7 +393,7 @@ git show secret
 
 password: `fb5S2xb7bRyFmAvQYQGEqsbhVyJqhnDy`
 
-# Level 31
+# Level 31 -> 32
 
 There is a git repository at `ssh://bandit31-git@bandit.labs.overthewire.org/home/bandit31-git/repo` via the port `2220`. The password for the user `bandit31-git` is the same as for the user `bandit31`. Clone the repository and find the password for the next level.
 
@@ -407,4 +411,3 @@ git push
 ```
 
 password: `3O9RfhqyAlVBEZpVb6LYStshZoqoSx5K`
-
