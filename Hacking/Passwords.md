@@ -69,6 +69,6 @@ hydra -L <userlist> -P <wordlist> [-t <#tasks>] -vV <ip> <protocol>
 reverse hash password for given usernames.
 
 http\[s]-post-form examples:
-- `https-post-form "<file.ext>:username=^USER^&password=^PASS^:F=Incorrect login"`.
-- `https-post-form "<file.ext>:user=^USER^&pass=^PASS^:F=Bad login"`.
-- `https-post-form "<file.ext>:<param>=<value>&login=^USER^&password=^PASS^:S=Success!!"`.
+- `https-post-form "</path/file.ext>:username=^USER^&password=^PASS^:F=Incorrect login"`.
+- `https-post-form "</path/file.ext>:user=^USER^&pass=^PASS^:F=Bad login"`.
+- `https-post-form "</path/file.ext>:<param>=<value>&login=^USER^&password=^PASS^:S=Success!!"`.

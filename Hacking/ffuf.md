@@ -7,7 +7,7 @@ ffuf -u http://<domain>/FUZZ -w <wordlist>
 Enumerate urls.
 
 ```
-ffuf -u http://<domain>/FUZZ -w <wordlist> -e .php,.html,.txt [-mc 200]
+ffuf -u http://<domain>/FUZZ -w <wordlist> -e .php,.html,.txt
 ```
 
 Enumerate _(public)_ files.
@@ -39,3 +39,16 @@ ffuf -w <userlist>:W1,<wordlist>:W2 -X POST -d <data> -H "Content-Type: applicat
 ```
 
 _data: fields to fill-up, like_ `"username=W1&password=W2"`.
+
+---
+
+## Options
+
+- **-c**: colorize output.
+- **-mc**: match HTTP status code with comma separated list of codes and ranges `[<x>-<y>|<x>],*` or `all`. Only display matching results.
+- **-mr**: match regex. Only display matching results.
+- **-fc**: filter HTTP status code with comma separated list of codes and ranges `[<x>-<y>|<x>],*`. Do not display matching results.
+- **-fr**: filter regex. Do not display matching results.
+- **-recursion**: scan recursively.
+- **-p**: pause in seconds.
+- **-rate**: rate of requests per second.
