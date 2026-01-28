@@ -116,6 +116,30 @@ pwd
 display local directory.
 
 ```
+ls -A
+```
+
+display all files in current directory, including hidden files but removing `.` and `..`.
+
+```
+mkdir -p <path/directory>
+```
+
+create a directory, including all directories within path if they do not exist.
+
+```
+cp -a <source> <destination>
+```
+
+copy a file or directory, keeping all attributes _(dates, times, ...)_.
+
+```
+cat -n <file>
+```
+
+display content of given file, showing line numbers.
+
+```
 su - [<username>]
 ```
 
