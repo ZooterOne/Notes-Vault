@@ -15,6 +15,14 @@ npx tsc --init
 
 install **Typescript** and setup with `tsconfig.json`.
 
+### VSCode
+
+Edit `tsconfig.json` and uncomment options for **NodeJS**. Make sure `sourceMap` is `true` for debugging.
+
+**Transpiling**: `Ctrl+Shift+B` and select `tsc: build - tsconfig.json`.
+
+**Debugging**: `Ctrl+Shift+D` and create a `launch.json` file. Add line `"preLaunchTask": "tsc: build - tsconfig.json",`.
+
 ## Vite
 
 ```
@@ -41,16 +49,24 @@ npx eslint --init
 install and setup **ESLint**.
 
 ```
-npm run lint
+npx eslint
 ```
 
 run **ESLint** to check for errors.
 
 ```
-npm run lint:fix
+npx eslint --fix
 ```
 
 run **ESLint** to check for errors and fix fixable errors.
+
+### VSCode
+
+```
+code --install-extension dbaeumer.vscode-eslint
+```
+
+install **VSCode** plugin.
 
 ## Terser
 
