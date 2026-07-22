@@ -39,6 +39,14 @@ npm create @phaserjs/game@latest [project-name]
 
 setup a new project using **Phaser**.
 
+Edit `package.json` adding `"private": true` and removing unnecessary lines.
+
+### VSCode
+
+ - Edit `tsconfig.json` adding `"sourceMap": true` for debugging.
+ - Add `Integrated Browser: Launch` to **Run And Debug** configuration for debugging.
+ - **Terminal | Run Task** and select `npm: dev` to start the local development server.
+
 ## ESLint
 
 ```
@@ -98,6 +106,12 @@ npm install
 ```
 
 install all required packages (from `package.json`).
+
+```
+npm update
+```
+
+update all installed packages.
 
 ```
 npm install <package>
