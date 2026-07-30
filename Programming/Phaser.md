@@ -18,6 +18,12 @@ const sprite_object = this.add.sprite(x_value, y_value, 'image_key');
 
 add a sprite from the provided image key (must be called during create).
 
+```js
+game_object.setOrigin(x_value, y_value);
+```
+
+set the anchor point for the game object _(value between 0 and 1)_.
+
 # Audio
 
 ```js
@@ -184,7 +190,7 @@ Cursor key can be `up`, `down`, `left`, `right`, `shift` or `space`.
 
 ```js
 this.time.addEvent({
-    callback: callback_function,
+    callback: () => { /* Code here */ },
     delay: value_in_ms,
     callbackScope: this,
     loop: true
@@ -292,10 +298,24 @@ this.camera.main.startFollow(target_object [, true, speed_value_for_x, speed_val
 set the camera to follow the target object. Speed value is between 0 and 1.
 
 ```js
-this.cameras.main.shake(duration_value_in_ms [, intensity_value, false, callback_function, callback_context]);
+this.cameras.main.shake(duration_value_in_ms [, intensity_value, false, 
+    (camera, progress) => { /* Code here */ }, callback_context]);
 ```
 
 shake the camera.
+
+```js
+this.camera.main.fade(duration_value_in_ms [, red_value, green_value, blue_value, false, 
+    (camera, progress) => { /* Code here */ }, callback_context]);
+```
+
+apply a fade transition from transparent to the provided color.
+
+```js
+game_object.setScrollFactor(x_value, y_value);
+```
+
+set the influence of the movement of a camera upon this game object.
 
 # Documentation
 
