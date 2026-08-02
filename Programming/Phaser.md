@@ -18,11 +18,19 @@ const sprite_object = this.add.sprite(x_value, y_value, 'image_key');
 
 add a sprite from the provided image key (must be called during create).
 
+# Game Objects
+
 ```js
 game_object.setOrigin(x_value, y_value);
 ```
 
 set the anchor point for the game object _(value between 0 and 1)_.
+
+```js
+game_object.setTint(color_value);
+```
+
+set the tint for this game object.
 
 # Audio
 
@@ -276,6 +284,36 @@ tween_object.stop();
 ```
 
 stop the animation.
+
+## Particles
+
+```js
+const particles_object = this.add.particles('image_key', {
+    x: { 
+        min: min_value, 
+        max: max_value },
+    y: y_value,
+    lifespan: value_in_ms,
+    speedX: speed_value,
+    speedY: { 
+        min: min_value, 
+        max: max_value },
+    scale: { 
+        start: start_value, 
+        end: end_value },
+    quantity: quantity_value,
+    blendMode: 'ADD'
+});
+```
+
+create a particles emitter object.
+
+```js
+particles_object.set<Property>(value);
+```
+
+update the particles emitter.
+
 
 # Camera
 
