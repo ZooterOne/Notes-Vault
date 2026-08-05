@@ -32,6 +32,32 @@ game_object.setTint(color_value);
 
 set the tint for this game object.
 
+```js
+game_object.setDepth(depth_value);
+```
+
+set the depth for this game object. Default is _0_.
+
+# Containers
+
+```js
+container_object = this.add.container([x_value, y_value, []]);
+```
+
+add a container.
+
+```js
+container_object(game_object | [game_objects]);
+```
+
+add game objects to the container.
+
+```js
+game_object = container_object.getAt(index_value);
+```
+
+get a game_object from the container.
+
 # Audio
 
 ```js
@@ -120,7 +146,45 @@ const sprite_object = group.create(x_value, y_value, 'image_key');
 
 add a sprite to the group.
 
+```js
+sprite_object = group_object.getFirstDead(true, x_value, y_value, 'image_key', 0, true);
+```
+
+get or create a sprite object from the group when possible.
+
+```js
+sprite_object.setActive(false).setVisible(false);
+```
+
+disable sprite object from the group.
+
+```js
+physics_object.disableBody(set_active_to_false, set_visible_to_false);
+```
+
+stop and disable physics object body.
+
 ## Movements
+
+```js
+physics_object.setVelocityX(x_value);
+```
+
+set the horizontal velocity of the physics object.
+
+```js
+const velocity_vector = this.physics.velocityFromRotation(angle_in_radians, speed_value);
+```
+
+get the velocity vector from an angle and speed.
+
+```js
+this.physics.moveTo(physics_object, x_value, y_value, speed_value);
+```
+
+move a physics object towards a target.
+
+## Interactions
 
 ```js
 physics_object.setCollideWorldBounds(true);
@@ -139,14 +203,6 @@ this.physics.add.overlap(physics_object_1, physics_object_2 [, callback]);
 ```
 
 add an overlap between two physics objects.
-
-```js
-physics_object.setVelocityX(x_value);
-```
-
-set the horizontal velocity of the physics object.
-
-## Interactions
 
 ```js
 physics_object.body.touching.<collision_direction>;
@@ -193,6 +249,20 @@ cursors_object.<cursor_key>.isDown
 
 check if a specific cursor key is down.
 Cursor key can be `up`, `down`, `left`, `right`, `shift` or `space`.
+
+```js
+const space_key = this,input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+```
+
+add specific key event listener.
+
+## Mouse events
+
+```js
+this.input.once(Phaser.Input.Events.POINTER_DOWN, () => { /* Code here */ });
+```
+
+add pointer down event handler.
 
 # Events
 
@@ -254,6 +324,12 @@ this.anims.pauseAll();
 
 pause all animations.
 
+```js
+sprite_object.once(Phaser.Animations.Events.ANIMATION_COMPLETE, () => { /* Code here */ });
+```
+
+run code once animation has completed.
+
 ## Tweens
 
 ```js
@@ -314,7 +390,6 @@ particles_object.set<Property>(value);
 
 update the particles emitter.
 
-
 # Camera
 
 ```js
@@ -343,11 +418,24 @@ this.cameras.main.shake(duration_value_in_ms [, intensity_value, false,
 shake the camera.
 
 ```js
-this.camera.main.fade(duration_value_in_ms [, red_value, green_value, blue_value, false, 
+this.cameras.main.fade(duration_value_in_ms [, red_value, green_value, blue_value, false, 
     (camera, progress) => { /* Code here */ }, callback_context]);
 ```
 
 apply a fade transition from transparent to the provided color.
+
+```js
+this.cameras.main.fadeOut(duration_value_in_ms [, red_value, green_value, blue_value,
+    (camera, progress) => { /* Code here */ }, callback_context]);
+```
+
+apply a fade out transition to the provided color.
+
+```js
+this.cameras.main.once(Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE, () => { /* Code here */ });
+```
+
+run code once fade out has completed.
 
 ```js
 game_object.setScrollFactor(x_value, y_value);
