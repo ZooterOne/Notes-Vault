@@ -443,6 +443,33 @@ game_object.setScrollFactor(x_value, y_value);
 
 set the influence of the movement of a camera upon this game object.
 
+# Data storage
+
+```js
+const value = this.registry.get(`key_value`);
+```
+
+get value from the registry.
+
+```js
+this.registry.set('key_value', value);
+```
+
+set value to the registry.
+
+```js
+const value_data = localStorage.getItem('key_value');
+const value = JSON.parse(value_data)?.value ?? 0;
+```
+
+get value stored on disc.
+
+```js
+localStorage.setItem('key_value', JSON.stringify({ value: value}));
+```
+
+set value to store on disc.
+
 # Documentation
 
 | Links |
