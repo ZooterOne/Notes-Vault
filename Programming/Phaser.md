@@ -251,7 +251,7 @@ check if a specific cursor key is down.
 Cursor key can be `up`, `down`, `left`, `right`, `shift` or `space`.
 
 ```js
-const space_key = this,input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+const space_key = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
 ```
 
 add specific key event listener.
@@ -291,7 +291,7 @@ load a sprite sheet in the cache.
 ```js
 this.anims.create({
     key: 'animation_key',
-    frames: this.anims.generateFrameNumbers('spritesheet_key'.
+    frames: this.anims.generateFrameNumbers('spritesheet_key',
         { start: start_value, end: end_value }),
     frameRate: frame_rate_value,
     repeat: -1
