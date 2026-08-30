@@ -245,3 +245,13 @@ git remote show origin
 ```
 
 show origin remote information.
+
+---
+
+## Archive
+
+```
+git archive HEAD -o <file.zip>
+```
+
+archive the current state of the repository.
